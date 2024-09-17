@@ -3,7 +3,13 @@
 // VARIÁVEIS
 $titulo: "Nunito", sans-serif
 
+$branco: white
+$bg-meio: #364478
+$bg-escuro: #1b1d38
+
+// Textos
 $claro: #399ced
+$escuro: #cef5f4
 
 *
     margin: 0
@@ -16,7 +22,26 @@ h1
 #selecionar-tema
     border: 2px solid red
     display: flex
+    justify-content: space-between
     width: 100%
 
-    button 
+    button
+        border: 4px solid
+        border-radius: 10px
+        padding: 15px
+        font-size: 2em
+
+    #claro
+        border-color: $claro
         color: $claro
+        background-color: $branco
+
+    #meio-escuro
+        border-color: $escuro
+        color: $escuro
+        background-color: $bg-meio
+
+    #escuro
+        border-color: $branco
+        color: $branco
+        background-color: $bg-escuro
