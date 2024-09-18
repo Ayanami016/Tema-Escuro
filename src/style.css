@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #c6c6c6;
+  background-color: #cfcfcf;
   transition-duration: 0.2s;
 }
 
@@ -20,8 +20,8 @@ body {
 }
 #selecionar-tema button {
   border: none;
-  border-radius: 15px;
-  padding: 15px;
+  border-radius: 30px;
+  padding: 18px;
   margin-bottom: 30px;
   font-size: 2em;
   font-weight: bold;
@@ -41,7 +41,7 @@ body {
   background-color: #364478;
 }
 #selecionar-tema #escuro {
-  color: white;
+  color: #cfcfcf;
   background-color: #1b1d38;
 }
 #selecionar-tema .div-botoes {
