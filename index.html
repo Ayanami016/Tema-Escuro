@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <link id="favicon" rel="shortcut icon" href="src/img/fav-principal.ico" type="image/x-icon">
     <title>Temas</title>
 </head>
 
-<body>
-    <h1>Selecione um Tema</h1>
+<body id="conteudo">
     <div id="selecionar-tema">
-        <button id="claro">Claro</button>
-        <button id="meio-escuro">Meio Escuro</button>
-        <button id="escuro">Escuro</button>
+        <div class="div-botoes">
+            <button id="claro">Claro</button>
+            <p class="textoclaro">
+                &#x1F98B; Uma linda borboleta na luz do dia!
+            </p>
+        </div>
+
+        <div class="div-botoes">
+            <button id="meio-escuro">Meio Escuro</button>
+            <p class="textomeio">
+                &#x1F98B; Uma linda borboleta na luz do entardecer!
+            </p>
+        </div>
+
+        <div class="div-botoes">
+            <button id="escuro">Escuro</button>
+            <p class="textoescuro">
+                &#x1F98B; Uma linda borboleta na luz da noite!
+            </p>
+        </div>
     </div>
+
+    <script src="src/javascript.js"></script>
 </body>
 </html>

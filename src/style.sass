@@ -6,6 +6,7 @@ $titulo: "Nunito", sans-serif
 $branco: white
 $bg-meio: #364478
 $bg-escuro: #1b1d38
+$cinza: #c6c6c6
 
 // Textos
 $claro: #399ced
@@ -16,32 +17,49 @@ $escuro: #cef5f4
     padding: 0
     box-sizing: border-box
 
+body
+    background-color: $cinza
+    transition-duration: .2s
+
 h1 
+    text-align: center
     font-family: $titulo
 
 #selecionar-tema
-    border: 2px solid red
     display: flex
-    justify-content: space-between
-    width: 100%
+    align-items: center
+    justify-content: space-around
+    min-height: 90vh
+    min-width: 100vh
 
     button
-        border: 4px solid
-        border-radius: 10px
+        border: none
+        border-radius: 15px
         padding: 15px
+        margin-bottom: 30px
         font-size: 2em
+        box-shadow: 0 10px 0
+        transition-duration: .1s
+
+    button:active
+        transform: translateY(5px)
+        box-shadow: 0 5px 0
 
     #claro
-        border-color: $claro
         color: $claro
         background-color: $branco
 
     #meio-escuro
-        border-color: $escuro
         color: $escuro
         background-color: $bg-meio
 
     #escuro
-        border-color: $branco
         color: $branco
         background-color: $bg-escuro
+
+    .div-botoes
+        text-align: center
+        p
+            display: none
+            font-size: 1.5em
+            line-height: 1.5em
