@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap')
 
 // VARIÁVEIS
-$titulo: "Nunito", sans-serif
+$texto: "Nunito", sans-serif
 
 $branco: white
 $bg-meio: #364478
@@ -16,14 +16,11 @@ $escuro: #cef5f4
     margin: 0
     padding: 0
     box-sizing: border-box
+    font-family: $texto
 
 body
     background-color: $cinza
     transition-duration: .2s
-
-h1 
-    text-align: center
-    font-family: $titulo
 
 #selecionar-tema
     display: flex
@@ -38,8 +35,9 @@ h1
         padding: 15px
         margin-bottom: 30px
         font-size: 2em
+        font-weight: bold
         box-shadow: 0 10px 0
-        transition-duration: .1s
+        transition-duration: .2s
 
     button:active
         transform: translateY(5px)
